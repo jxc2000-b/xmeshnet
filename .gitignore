@@ -1,0 +1,45 @@
+# ESP-IDF
+build/
+sdkconfig
+sdkconfig.old
+*.pyc
+__pycache__/
+managed_components/
+dependencies.lock
+
+# Arduino
+*.bin
+*.elf
+*.map
+
+# ML Models (large binaries — use Git LFS or external storage)
+*.tflite
+*.onnx
+*.pt
+*.pth
+*.h5
+*.pb
+*.tflite.micro
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+*.o
+*.obj
+*.a
+*.so
+*.dll
+
+# Secrets
+secrets.h
+.env
+*.pem
