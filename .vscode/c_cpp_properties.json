@@ -1,0 +1,50 @@
+{
+  "configurations": [
+    {
+      "name": "ESP-IDF",
+      "compilerPath": "/Users/brynw/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
+      "compileCommands": "${workspaceFolder}/build/compile_commands.json",
+      "includePath": [
+        "${workspaceFolder}/build/config",
+        "${workspaceFolder}/main",
+        "${workspaceFolder}/hello_world/main",
+        "${workspaceFolder}/mesh/internal_communication/main",
+        "${workspaceFolder}/mesh/internal_communication/main/include",
+        "${workspaceFolder}/mesh",
+        "/Users/brynw/esp/esp-idf/components/**"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}",
+          "/Users/brynw/esp/esp-idf/components"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "cStandard": "gnu17",
+      "cppStandard": "gnu++17",
+      "intelliSenseMode": "linux-gcc-x86"
+    },
+    {
+      "name": "ESP-IDF Mesh Internal Communication",
+      "compilerPath": "/Users/brynw/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc",
+      "compileCommands": "${workspaceFolder}/mesh/internal_communication/build/compile_commands.json",
+      "includePath": [
+        "${workspaceFolder}/mesh/internal_communication/build/config",
+        "${workspaceFolder}/mesh/internal_communication/main",
+        "${workspaceFolder}/mesh/internal_communication/main/include",
+        "/Users/brynw/esp/esp-idf/components/**"
+      ],
+      "browse": {
+        "path": [
+          "${workspaceFolder}/mesh/internal_communication",
+          "/Users/brynw/esp/esp-idf/components"
+        ],
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "cStandard": "gnu17",
+      "cppStandard": "gnu++17",
+      "intelliSenseMode": "linux-gcc-x86"
+    }
+  ],
+  "version": 4
+}

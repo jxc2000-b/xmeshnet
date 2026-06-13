@@ -1,45 +1,84 @@
-# ESP-IDF
+docs/
+.DS_store# ESP-IDF / CMake build outputs
 build/
-sdkconfig
-sdkconfig.old
-*.pyc
-__pycache__/
+build-*/
 managed_components/
-dependencies.lock
+dependencies.lock.tmp
 
-# Arduino
+# Firmware build artifacts
 *.bin
 *.elf
 *.map
+*.hex
+*.uf2
+*.img
+*.lst
+*.dis
+*.dump
 
-# ML Models (large binaries — use Git LFS or external storage)
-*.tflite
-*.onnx
-*.pt
-*.pth
-*.h5
-*.pb
-*.tflite.micro
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+Makefile
+Testing/
 
-# IDE
-.vscode/
-.idea/
+# ESP-IDF generated config/cache files
+sdkconfig.old
+sdkconfig.defaults.old
+sdkconfig.rename
+sdkconfig.ci
+
+# Python tooling
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
 Thumbs.db
 
-# Build artifacts
-*.o
-*.obj
-*.a
-*.so
-*.dll
-
-# Secrets
-secrets.h
+# Local environment files
 .env
-*.pem
+.env.*
+!.env.example
+
+# Editor / IDE local state
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/c_cpp_properties.json
+.idea/
+.clangd/
+.cache/
+
+# Eclipse / Espressif IDE generated metadata
+.metadata/
+.settings/
+.project
+.cproject
+
+# Test and coverage artifacts
+coverage/
+htmlcov/
+*.gcda
+*.gcno
+*.gcov
+
+# Local flash/monitor captures
+monitor.log
+serial.log
+flash.log

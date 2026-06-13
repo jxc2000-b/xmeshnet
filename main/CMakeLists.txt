@@ -1,0 +1,28 @@
+idf_component_register(
+    SRCS
+        "../firmware/common/src/x_config.c"
+        "../firmware/common/src/x_node_identity.c"
+        "../firmware/common/src/x_protocol.c"
+        "../firmware/common/src/x_security.c"
+        "../firmware/gateway/main/gateway_app.c"
+        "../firmware/gateway/main/main.c"
+        "../firmware/gateway/main/mesh_root.c"
+        "../firmware/gateway/main/mqtt_client.c"
+        "../firmware/gateway/main/node_registry.c"
+        "../firmware/gateway/main/ota_manager.c"
+        "../firmware/gateway/main/web_admin.c"
+    INCLUDE_DIRS
+        "."
+        "../firmware/common/include"
+        "../firmware/gateway/main"
+    REQUIRES
+        esp_wifi
+        esp_event
+        esp_http_server
+        esp_https_ota
+        mqtt
+        nvs_flash
+        mbedtls
+        json
+        app_update
+)
