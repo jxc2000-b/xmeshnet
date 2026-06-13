@@ -3,5 +3,5 @@
 xmeshnet is an ESP32 multi-mesh-network. Currently in development...
 
 ### Probably going private soon
-[![steipete](https://avatars.githubusercontent.com/u/102927782?v=4&size=48)](https://github.com/jxc2000-b) 
+[![steipete](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXgKVDeoM72zBdSQKRC6vDprSsLDO_7LOj-HB9qH-CNS43OuLR6bZLz52c&s)]
 
